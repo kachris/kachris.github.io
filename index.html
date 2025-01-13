@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Slide Collection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        main {
+            display: flex;
+            justify-content: center;
+            padding: 2em;
+        }
+        .pdf-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5em;
+            max-width: 800px;
+            width: 100%;
+            padding: 1em;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .pdf-item {
+            display: flex;
+            align-items: center;
+            gap: 1em;
+            padding: 1em;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            transition: box-shadow 0.3s ease;
+        }
+        .pdf-item:hover {
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        .pdf-item img {
+            width: 80px;
+            height: auto;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        .pdf-item a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .pdf-item a:hover {
+            text-decoration: underline;
+        }
+        .pdf-description {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PDF Slide Collection</h1>
+    </header>
+    <main>
+        <div class="pdf-list">
+            <!-- Example PDF Item -->
+            <div class="pdf-item">
+                <img src="thumbnail1.jpg" alt="Thumbnail for Slide 1">
+                <div class="pdf-description">
+                    <a href="slide1.pdf" target="_blank">Slide Set 1</a>
+                    <p>A short description of what this slide set is about.</p>
+                </div>
+            </div>
+            
+            <div class="pdf-item">
+                <img src="thumbnail2.jpg" alt="Thumbnail for Slide 2">
+                <div class="pdf-description">
+                    <a href="slide2.pdf" target="_blank">Slide Set 2</a>
+                    <p>A short description of the contents of this slide set.</p>
+                </div>
+            </div>
+
+            <!-- Add more PDF items here -->
+        </div>
+    </main>
+</body>
+</html>
